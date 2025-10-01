@@ -1,18 +1,4 @@
-// export default function Home() {
-//   return (
-//     <div className="text-center pt-12">
-//       <h1 className="text-3xl capitalize font-bold mb-4">
-//           Welcome to Abelle Group
-//       </h1>
-//       <p className="text-[16px]"> A creative hub where innovation meets practicality. Explore my
-//           portfolio, live demos, and the journey of building digital solutions —
-//           from mobile apps and management systems to e-commerce platforms and             travel portals.</p>
-//     </div>
-//   );
-// }
-
-
-"use client"; // only needed for App Router if you want animations or interactivity
+"use client"; 
 import Link from "next/link";
 import { LayoutGroup, motion } from "framer-motion";
 
@@ -89,7 +75,7 @@ export default function HomePage() {
             {
               title: "Travel Portal",
               desc: "Interactive travel booking portal with real-time itineraries.",
-              link: "/projects/travel-portal",
+              link: "/projects/roaringl",
             },
           ].map((project, index) => (
             <motion.div
