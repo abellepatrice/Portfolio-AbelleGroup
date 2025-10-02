@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen container-fluid bg-gray-50 text-gray-900">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gradient-to-r from-amber-700 to-yellow-600 text-white">
+      <section className="flex flex-col items-center justify-center text-center py-20 px-6 bg-gray-700 to-yellow-600 text-white">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,13 +24,13 @@ export default function HomePage() {
         <div className="flex gap-4">
           <Link
             href="/portfolio"
-            className="px-6 py-3 bg-white text-amber-700 font-semibold rounded-2xl shadow hover:bg-gray-100 transition"
+            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:white hover:text-grey-700 transition"
           >
             View Portfolio
           </Link>
           <Link
             href="/demos"
-            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-white hover:text-amber-700 transition"
+            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-gray-700 hover:text-white transition"
           >
             Try Live Demos
           </Link>
@@ -54,7 +54,7 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-center mb-10">
           Featured Projects
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Project Card */}
           {[
             {
@@ -130,7 +130,7 @@ export default function HomePage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="py-16 px-6 md:px-20 text-center bg-gradient-to-r from-amber-700 to-yellow-600 text-white">
+      <section className="py-16 px-6 md:px-20 text-center text-grey-700">
         <h2 className="text-3xl font-bold mb-4">Let’s Build Together</h2>
         <p className="max-w-2xl mx-auto mb-8">
           Interested in collaborating or exploring more projects? Feel free to
@@ -139,13 +139,13 @@ export default function HomePage() {
         <div className="flex justify-center gap-4">
           <Link
             href="https://github.com/abellepatrice"
-            className="px-6 py-3 bg-white text-amber-700 font-semibold rounded-2xl shadow hover:bg-gray-100 transition"
+            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-gray-700 hover:text-white transition"
           >
             GitHub
           </Link>
           <Link
             href="mailto:abellepatrice@gmail.com"
-            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-white hover:text-amber-700 transition"
+            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-gray-700 hover:text-white transition"
           >
             Email Me
           </Link>
