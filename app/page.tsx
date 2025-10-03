@@ -1,6 +1,7 @@
 "use client"; 
 import Link from "next/link";
 import { LayoutGroup, motion } from "framer-motion";
+import SkillsGraph from "./components/SkillsGraph";
 
 export default function HomePage() {
   return (
@@ -150,6 +151,7 @@ export default function HomePage() {
             Email Me
           </Link>
         </div>
+        <SkillsGraph/>
       </section>
     </main>
   );
