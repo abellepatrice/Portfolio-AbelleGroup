@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="bg-white shadow sticky top-0 z-50">
       <nav className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo / Brand */}
-        <Link href="/" className="text-xl font-bold text-amber-700">
+        <Link href="/" className="text-xl font-bold text-gray-700">
           AbelleGroup
         </Link>
 
