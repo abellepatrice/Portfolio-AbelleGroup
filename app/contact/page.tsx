@@ -26,7 +26,7 @@ const Contact = () => {
       } else {
         setStatus("❌ Failed to send message.");
       }
-    } catch (err) {
+    } catch {
       setStatus("⚠️ Something went wrong.");
     }
   };
