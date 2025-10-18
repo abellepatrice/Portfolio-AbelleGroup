@@ -9,7 +9,6 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
-    // Insert into Supabase
     const { error } = await supabase.from("contact_messages").insert([
       { name, email, message }
     ]);
@@ -19,7 +18,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to save message" }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true, message: "Message stored in Supabase!" });
+    return NextResponse.json({ success: true, message: "Message saved in the database!" });
   } catch (err) {
     return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
   }

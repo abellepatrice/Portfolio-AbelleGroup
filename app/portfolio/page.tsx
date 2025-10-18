@@ -5,25 +5,25 @@ export default function PortfolioPage() {
     {
       title: "Loan App",
       description: "A comprehensive loan application system with Node.js backend and React Native dashboard for managing loans.",
-      link: "/projects/loan-app",
+      link: "/demos",
       tech: ["Node.js", "React Native", "MongoDB"],
     },
     {
       title: "Elite Shop",
       description: "An e-commerce platform where only admins can upload products, featuring secure login and user management.",
-      link: "/projects/elite-shop",
+      link: "/demos",
       tech: ["Next.js", "Supabase", "Tailwind CSS"],
     },
     {
       title: "Speedy Spanners",
       description: "A garage management system for booking repairs, tracking services, and handling payments.",
-      link: "/projects/speedy-spanners",
+      link: "/demos",
       tech: ["React", "Node.js", "Express.js"],
     },
     {
       title: "RoaringL Travel Portal",
       description: "An interactive travel booking portal with real-time itineraries and destination guides.",
-      link: "/projects/roaringl",
+      link: "https://abellepatrice.pythonanywhere.com/",
       tech: ["Flask", "Python", "HTML/CSS"],
     },
   ];
