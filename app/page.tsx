@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Contact from "./contact/page";
 
+
 export default function HomePage() {
   return (
     <main className="min-h-screen container-fluid bg-gray-50 text-gray-900">
@@ -24,7 +25,7 @@ export default function HomePage() {
         <div className="flex gap-4">
           <Link
             href="/portfolio"
-            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-gray-300 hover:text-grey-700 transition"
+            className="px-6 py-3 bg-transparent border border-white font-semibold rounded-2xl hover:bg-gray-300 hover:text-gray-700 transition"
           >
             View Portfolio
           </Link>
@@ -37,15 +38,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-12 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-bold mb-6">About Me</h2>
-        <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
-          I am <span className="font-semibold">Patrice Oyende</span>
-          Stack & Mobile Developer passionate about blending technology with
-          everyday needs. I specialize in building secure, scalable, and
-          user-friendly solutions — from loan apps and garage management systems
-          to travel platforms and e-commerce stores.
-        </p>
+      <section className="py-16 px-6 md:px-20 text-start">
+        <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
+        <motion.div
+          whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
+          transition={{ duration: 0.3 }}
+          className="max-w-5xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+        >
+          <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+            <p>
+              <span className="font-semibold text-gray-900">Patrice Oyende</span>, is the the founder of <span className="font-semibold text-gray-900">AbelleGroup</span>, a creative hub where innovation meets practicality. As a passionate Full Stack & Mobile Developer, I specialize in blending cutting-edge technology with everyday needs to deliver secure, scalable, and user-friendly solutions. My expertise spans a wide range of technologies, including React, React Native, Next.js, Node.js, Flask, MongoDB, and more, enabling me to build everything from loan applications and garage management systems to travel platforms and e-commerce stores.
+            </p>
+            <p>
+              At AbelleGroup, I collaborate closely with talented individuals like Emmanuel Abelle (Wazzicus), who has been instrumental in co-developing key projects such as our Loan App and this very portfolio website. Together, we focus on creating digital solutions that not only meet client needs but also drive business growth and user satisfaction. Our approach emphasizes cybersecurity, agile methodologies, and seamless integrations like MPESA and PayPal payments.
+            </p>
+            <p>
+              AbelleGroup is open to collaborations with other companies, offering flexible partnerships to bring your ideas to life. Whether you're a startup needing a mobile app or an enterprise requiring a robust web platform, I, Patrice Oyende, am eager to work with you to turn concepts into reality. Let's build something impactful together!
+            </p>
+          </div>
+        </motion.div>
       </section>
 
       <section className="py-12 px-6 md:px-20 bg-gray-100">
@@ -57,22 +68,22 @@ export default function HomePage() {
             {
               title: "Loan App",
               desc: "A loan application system with Node.js backend and React Native dashboard.",
-              link: "/projects/loan-app",
+              link: "/portfolio",
             },
             {
               title: "Elite Shop",
               desc: "An e-commerce platform where only admin uploads products, with secure logins.",
-              link: "/projects/elite-shop",
+              link: "/portfolio",
             },
             {
               title: "Speedy Spanners",
               desc: "Garage management system with bookings, repairs, and payments.",
-              link: "/projects/speedy-spanners",
+              link: "/portfolio",
             },
             {
               title: "Travel Portal",
               desc: "Interactive travel booking portal with real-time itineraries.",
-              link: "/projects/roaringl",
+              link: "/portfolio",
             },
           ].map((project, index) => (
             <motion.div
@@ -124,6 +135,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+
 
       <section className="py-12 px-6 md:px-20 text-center bg-gray-700 text-white">
         <h2 className="text-3xl font-bold mb-4">Let’s Build Together</h2>

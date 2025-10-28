@@ -171,15 +171,15 @@ const AboutPage: React.FC = () => {
               },
               {
                 title: "Loan App (Individual & Group Loans)",
-                desc: "Tech Stack: React Native,TypeScript, Node.js(Express.js), MongoDB and Android(Kotlin). Mobile app with individual and group loan applications. Admin dashboard for approving loans, tracking repayment status, and managing users. GitHub: github.com/abellepatrice/AbelleGroup. Collaborated with Emmanuel Abelle.",
+                desc: "Tech Stack: React Native, TypeScript, Node.js (Express.js), MongoDB and Android (Kotlin). Mobile app with individual and group loan applications. Admin dashboard for approving loans, tracking repayment status, and managing users. GitHub: github.com/abellepatrice/AbelleGroup. Collaborated with Emmanuel Abelle.",
               },
               {
                 title: "Abelle Group Web-Portfolio",
-                desc: "Tech Stack: NextJS, TypeScript and Supabase. A portfolio that shows the projects I have created, live demos and the programs I use. Tech Stack: Next.js, React, Tailwind CSS. This is the current website you're viewing. Collaborated with Emmanuel Abelle.",
+                desc: "Tech Stack: NextJS, TypeScript and Supabase. A portfolio that shows the projects I have created, live demos and the programs I use. This is the current website you're viewing. Collaborated with Emmanuel Abelle.",
               },
               {
                 title: "Health App",
-                desc: "Tech Stack: React Native, TypeScript, Node.js(Express.js), Supabase. Mobile app that allows users to track their Health numbers and majorly focusing on nutrition and diabesity. This includes BMI, Blood pressure and Glucose" ,
+                desc: "Tech Stack: React Native, TypeScript, Node.js (Express.js), Supabase. Mobile app that allows users to track their health numbers and majorly focusing on nutrition and diabesity. This includes BMI, blood pressure and glucose.",
               },
               
             ].map((proj, i) => (
@@ -216,7 +216,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-white p-6 rounded-2xl shadow">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Mobile Developer</h3>
               <p className="text-gray-600 mb-2"><strong>Abelle Group Loan App</strong></p>
-              <p className="text-gray-600 mb-2"><strong>June 2024 – October 2024</strong></p>
+              <p className="text-gray-600 mb-2"><strong>June 2025 – October 2025</strong></p>
               <ul className="list-disc list-inside text-gray-600">
                 <li>Developed a mobile app for individual and group loan applications using React Native, Node.js, MongoDB, and TypeScript.</li>
                 <li>Built an admin dashboard for approving loans, tracking repayment status, and managing users.</li>
