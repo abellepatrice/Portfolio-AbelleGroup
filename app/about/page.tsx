@@ -266,7 +266,6 @@ const AboutPage: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Duncan Muturi</h3>
               <p className="text-gray-600 mb-2">Trainer – Modcom Institute of Technology</p>
               <p className="text-gray-600 mb-2">Email: <Link href="mailto:duncanmuturi@gmail.com" className="text-blue-500 hover:underline">duncanmuturi@gmail.com</Link></p>
-              <p className="text-gray-600 mb-2">Phone: +254 757 568 884</p>
               <p className="text-gray-600"><Link href="https://www.linkedin.com/in/duncan-muturi" className="text-blue-500 hover:underline">LinkedIn</Link></p>
             </motion.div>
             <motion.div
