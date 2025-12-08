@@ -26,6 +26,12 @@ export default function PortfolioPage() {
       link: "https://abellepatrice.pythonanywhere.com/",
       tech: ["Flask", "Python", "HTML/CSS"],
     },
+    {
+      title: "Clover TODO App",
+      description: "A comprehensive task management application with backend, web, and mobile components for creating, editing, and tracking tasks.",
+      link: "/demos",
+      tech: ["NestJS", "Next.js", "Flutter", "TypeScript", "Dart", "Node.js"],
+    },
   ];
 
   return (

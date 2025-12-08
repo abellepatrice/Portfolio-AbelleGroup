@@ -176,6 +176,9 @@ export default function HomePage() {
             { name: "PHP Laravel", level: 85 },
             { name: "Express.js", level: 90 },
             { name: "Flask/Python", level: 90 },
+            { name: "NestJS", level: 75 },
+            { name: "Flutter", level: 70 },
+            { name: "Dart", level: 70 },
           ].map((skill, index) => (
             <div
               key={index}

@@ -5,14 +5,13 @@ import { motion } from "framer-motion";
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-6 md:px-16">
-      <div className="max-w-5xl mx-auto">
+    <div className="min-h-screen bg-gray-50 py-6 px-12 md:px-16">
         {/* Hero Section */}
         <motion.section
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16 bg-gray-700 py-20 px-6 md:px-16 text-white"
+          className="text-center bg-gray-700 py-20 px-6 md:px-16 text-white"
         >
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -39,7 +38,7 @@ const AboutPage: React.FC = () => {
           </p>
          
         </motion.section>
-
+      <div className="max-w-5xl mx-auto">
         {/* Key Competencies Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
@@ -104,7 +103,7 @@ const AboutPage: React.FC = () => {
                   </svg>
                 ),
                 title: "Backend",
-                desc: "Node.js (Express.js), Flask (Python)",
+                desc: "Node.js (Express.js, NestJS), Flask (Python)",
               },
               {
                 icon: (
@@ -131,7 +130,7 @@ const AboutPage: React.FC = () => {
                   </svg>
                 ),
                 title: "Mobile & Other",
-                desc: "React Native, Kotlin (Android), MPESA/PayPal Integration",
+                desc: "React Native, Flutter, Dart, Kotlin (Android), MPESA/PayPal Integration",
               },
             ].map((stack, i) => (
               <motion.div
@@ -173,13 +172,17 @@ const AboutPage: React.FC = () => {
                 title: "Loan App (Individual & Group Loans)",
                 desc: "Tech Stack: React Native, TypeScript, Node.js (Express.js), MongoDB and Android (Kotlin). Mobile app with individual and group loan applications. Admin dashboard for approving loans, tracking repayment status, and managing users. GitHub: github.com/abellepatrice/AbelleGroup. Collaborated with Emmanuel Abelle.",
               },
-              {
-                title: "Abelle Group Web-Portfolio",
-                desc: "Tech Stack: NextJS, TypeScript and Supabase. A portfolio that shows the projects I have created, live demos and the programs I use. This is the current website you're viewing. Collaborated with Emmanuel Abelle.",
-              },
+              // {
+              //   title: "Abelle Group Web-Portfolio",
+              //   desc: "Tech Stack: NextJS, TypeScript and Supabase. A portfolio that shows the projects I have created, live demos and the programs I use. This is the current website you're viewing. Collaborated with Emmanuel Abelle.",
+              // },
               {
                 title: "Health App",
                 desc: "Tech Stack: React Native, TypeScript, Node.js (Express.js), Supabase. Mobile app that allows users to track their health numbers and majorly focusing on nutrition and diabesity. This includes BMI, blood pressure and glucose.",
+              },
+              {
+                title: "Clover TODO App",
+                desc: "Tech Stack: NestJS, Next.js, Flutter, TypeScript, Dart, Node.js. A full-stack task management app with backend API, web interface, and mobile app for creating, editing, and completing tasks.",
               },
               
             ].map((proj, i) => (

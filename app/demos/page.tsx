@@ -21,6 +21,7 @@ export default function DemoPage() {
             { id: "shop", name: "Elite Shop Demo" },
             { id: "garage", name: "Speedy Spanners Demo" },
             { id: "travel", name: "RoaringL Demo" },
+            { id: "clover", name: "Clover TODO Demo" },
           ].map((demo) => (
             <button
               key={demo.id}
@@ -42,6 +43,7 @@ export default function DemoPage() {
           {activeDemo === "shop" && <EliteShopDemo />}
           {activeDemo === "garage" && <SpeedySpannersDemo />}
           {activeDemo === "travel" && <RoaringLDemo />}
+          {activeDemo === "clover" && <CloverTODODemo />}
         </div>
       </div>
     </div>
@@ -315,6 +317,81 @@ function RoaringLDemo() {
           </p>
         </div>
       )}
+    </div>
+  );
+}
+
+// Clover TODO Demo Component
+function CloverTODODemo() {
+  const [tasks, setTasks] = useState<{ id: number; text: string; completed: boolean }[]>([]);
+  const [newTask, setNewTask] = useState("");
+
+  const addTask = () => {
+    if (newTask.trim()) {
+      setTasks([...tasks, { id: Date.now(), text: newTask, completed: false }]);
+      setNewTask("");
+    }
+  };
+
+  const toggleTask = (id: number) => {
+    setTasks(tasks.map(task =>
+      task.id === id ? { ...task, completed: !task.completed } : task
+    ));
+  };
+
+  const deleteTask = (id: number) => {
+    setTasks(tasks.filter(task => task.id !== id));
+  };
+
+  return (
+    <div>
+      <h2 className="text-2xl font-bold mb-4">Clover TODO Demo</h2>
+      <p className="text-gray-600 mb-6">
+        Manage your tasks. Add, complete, and delete tasks in this simple demo.
+      </p>
+      <div className="mb-6">
+        <div className="flex gap-2">
+          <input
+            type="text"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+            placeholder="Add a new task..."
+            className="flex-1 px-4 py-2 border rounded-lg"
+            onKeyPress={(e) => e.key === 'Enter' && addTask()}
+          />
+          <button
+            onClick={addTask}
+            className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+      <div className="space-y-2">
+        {tasks.length === 0 ? (
+          <p className="text-gray-500">No tasks yet. Add one above!</p>
+        ) : (
+          tasks.map((task) => (
+            <div key={task.id} className="flex items-center gap-2 p-2 border rounded-lg">
+              <input
+                type="checkbox"
+                checked={task.completed}
+                onChange={() => toggleTask(task.id)}
+                className="w-4 h-4"
+              />
+              <span className={`flex-1 ${task.completed ? 'line-through text-gray-500' : ''}`}>
+                {task.text}
+              </span>
+              <button
+                onClick={() => deleteTask(task.id)}
+                className="text-red-500 hover:text-red-700"
+              >
+                Delete
+              </button>
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 }
